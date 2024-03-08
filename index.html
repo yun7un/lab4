@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styles/global.css">
+  <link rel="stylesheet" type="text/css" href="styles/lab_four_starter.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Common Website Features</title>
+</head>
+<body>
+  <!-- Hero banner HTML -->
+  <section class="hero-container">
+    <div class="remove-assignment-content">
+        <div class="hero-text">
+          <h1>Calgary Dessert Fair</h1>
+          <p class="subline">2023.02.11 BMO Centre</p>
+          <button class="main-button">Get Tickets</button>
+        </div>
+      </div>
+  </section>
+  <!-- content HTML -->
+  <section class="container content-container">
+    <div class="content-box">
+      <div class="content-text">
+      <h1>Meet Your Favourite Desserts</h1>
+      <p>2023.02.11 BMO Centre</p>
+      <button class="sub-button">Booth List</button>
+      </div>
+    </div>
+  </section>
+  <!-- accordion HTML -->
+  <section class="container accordion-container">
+    <div class="accordion-box">
+      <h1>Frequently Asked Questions</h1>
+      <button class="accordion">What is Calgart Desseert Fair?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus, nunc finibus rutrum semper, augue purus dapibus quam, vel luctus ex ex a neque. Maecenas maximus nulla turpis, at sollicitudin magna iaculis quis. Curabitur ullamcorper tellus tortor, in maximus massa cursus vel. Ut vitae urna mollis, pellentesque metus ac, hendrerit lectus. Aliquam felis libero, ultricies eu risus id, pulvinar porta ante. Quisque maximus libero diam, in ultrices eros mattis eu. Etiam luctus eu dolor nec gravida.</p>
+        </div>
+
+      <button class="accordion">Is it possible to bring guests?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus, nunc finibus rutrum semper, augue purus dapibus quam, vel luctus ex ex a neque. Maecenas maximus nulla turpis, at sollicitudin magna iaculis quis. Curabitur ullamcorper tellus tortor, in maximus massa cursus vel. Ut vitae urna mollis, pellentesque metus ac, hendrerit lectus.</p>
+        </div>
+
+      <button class="accordion">How do I apply?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus, nunc finibus rutrum semper, augue purus dapibus quam, vel luctus ex ex a neque. Maecenas maximus nulla turpis, at sollicitudin magna iaculis quis. Curabitur ullamcorper tellus tortor, in maximus massa cursus vel. Ut vitae urna mollis, pellentesque metus ac, hendrerit lectus.</p>
+        </div>
+
+        <button class="accordion">What are entry requirements?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus, nunc finibus rutrum semper, augue purus dapibus quam, vel luctus ex ex a neque. Maecenas maximus nulla turpis.</p>
+        </div>
+
+        <button class="accordion">Is it free to park?</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus.</p>
+        </div>
+    </div>
+
+      <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
+
+  </section>
+  <!-- Remove and add footer HTML -->
+  <section class="footer-container">
+    <div class="footer-content">
+      <div class="col1">
+      <h2>Contact Info</h2>
+      <ul>
+        <li><a href="#">calgaryfakefair@example.com</a></li>
+        <li>(403) 123 4567</li>
+        <li>Fake address SE Calgary, AB, Canada</li>
+        <div class="sns">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </ul>
+      </div>
+      <div class="col2">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+      </div>
+
+      <div class="col3">
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.7386711732843!2d-114.05889698752026!3d51.03944717159276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53717004145385dd%3A0x124c0d0e3b3d4103!2sBMO%20Centre!5e0!3m2!1sen!2sca!4v1709862272628!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+    <div class="year">
+      Copyright
+      &copy;
+      <span id="copyright">
+          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span>
+      Calgary Desserts Fair
+    </div>
+  </section>
+</body>
+</html>

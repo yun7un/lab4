@@ -1,0 +1,287 @@
+.remove-assignment-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/** hero banner **/
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../assets/Background.jpg);
+  background-color: #403d58;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 100vh;
+}
+
+.hero-text{
+  font-family: "Dancing Script", sans-serif;
+  font-style: italic;
+  font-size:large;
+  color: rgb(255, 252, 240);
+}
+
+.subline {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+}
+
+/** content **/
+.content-box {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(../assets/dessert.jpg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 100%;
+  background-color: rgb(255, 252, 240);
+  height: 600px;
+}
+
+.content-text {
+  font-family: "Quicksand", sans-serif;
+  text-shadow: 1px 1px 10px rgb(255, 252, 240), 1px 1px 10px rgb(255, 252, 240);
+}
+
+/** accordian **/
+.accordion-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../assets/Background.jpg);
+  background-size: cover;
+  background-color: rgb(255, 252, 240);
+  color: #fff;
+  height: auto;
+}
+
+.accordion-box {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* buttons used to open and close the accordion panel */
+.accordion {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(255, 252, 240);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s ease;
+}
+
+.accordion:hover {
+  background-color: rgb(249, 213, 213);
+  color: #444;
+}
+
+.active, .accordion.active {
+  background-color: rgb(180, 30, 30);
+  color: rgb(255, 252, 240);
+}
+
+.active + .panel {
+  display: block;
+}
+
+.panel p {
+  color: black;
+  text-align: left;
+}
+
+.accordion-box h1 {
+  font-family: "Quicksand", sans-serif;
+  color: rgb(255, 252, 240);
+  text-shadow: 1px 1px 10px #444, 1px 1px 10px #444;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: rgb(252, 236, 236);
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f067'; /** plus icon **/
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f068"; /** minus icon **/
+  color: rgb(255, 252, 240);
+}
+
+/** footer **/
+.footer-container {
+  font-family: "Quicksand", sans-serif;
+  background-color: #f2efea;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 4em 0 4em;
+}
+
+.footer-content div {
+  text-align: center;
+  margin: 2em 0 1em 0;
+}
+
+.col2 a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fab:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  color: white;
+}
+
+.map {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  width: auto;
+}
+
+.year {
+  display: block;
+  align-self: flex-end;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/** btn styles **/
+.main-button {
+  background-color: rgb(255, 252, 240);
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  display: inline-block;
+}
+
+.main-button:hover {
+  background-color: rgb(180, 30, 30);
+  border: none;
+  color: rgb(255, 252, 240);
+}
+
+.sub-button {
+  background-color: rgb(255, 252, 240);
+  border-color: rgb(180, 30, 30);
+  border-style: solid;
+  color: rgb(180, 30, 30);
+  padding: 15px 32px;
+  display: inline-block;
+}
+
+.sub-button:hover {
+  background-color: rgb(180, 30, 30);
+  color: rgb(255, 252, 240);
+}
+
+/** Responsive content **/
+@media screen and (max-width: 1160px) {
+  .content-container {
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../assets/dessert.jpg);
+  }
+}
+
+@media screen and (min-width: 1161px) {
+  .content-box {
+  font-size: 2rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  }
+}
+
+/** Responsive Footer **/
+@media screen and (max-width: 970px) {
+  .footer-container {
+    height: auto;
+  }
+
+  .footer-content {
+    display: block;
+  }
+
+  .map {
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    width: auto;
+  }
+}
